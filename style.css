@@ -1,0 +1,716 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black; /* Set background to black */
+    color: white; /* Ensure text is readable on black */
+}
+
+/* General Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    border-bottom: 2px solid #444;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}
+
+.nav-name {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077b5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #005582;
+}
+
+/* Hamburger Icon (Mobile Menu Button) */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        position: relative; /* Ensure proper positioning */
+    }
+
+    .navbar-right {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #2a2a2a;
+        padding: 10px 0;
+        position: absolute;
+        top: 100%; /* Appears just below the navbar */
+        left: 0;
+        z-index: 1000;
+        border-top: 1px solid #444;
+        box-sizing: border-box; /* Prevents overflow */
+    }
+
+    .navbar-right.active {
+        display: flex;
+    }
+
+    .nav-button {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box; /* Ensures padding doesn't exceed container width */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/* Cover Photo Sections */
+.cover {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.cover-welcome {
+    background: url('images/C1.jpg') no-repeat center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-secondary {
+    background: url('images/C2.jpg') no-repeat center/cover;
+    height: 40vh;
+}
+
+.cover-secondary {
+    background: url('images/C2.jpg') no-repeat center/cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Section */
+.profile {
+    margin: 40px 20px;
+}
+
+.profile-pic {
+    width: 300px; /* Increased size */
+    height: 300px; /* Increased size */
+    border-radius: 50%;
+    border: 4px solid #ddd;
+    margin-bottom: 15px;
+}
+
+/* Social Links Section */
+.social-links {
+    margin: 30px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+/* LinkedIn Button */
+.social-links .linkedin {
+    background: #0077b5;
+}
+.social-links .linkedin:hover {
+    background: #005582;
+}
+
+/* Facebook Button */
+.social-links .facebook {
+    background: #4267B2;
+}
+.social-links .facebook:hover {
+    background: #365899;
+}
+
+/* WhatsApp Button */
+.social-links .whatsapp {
+    background: #25D366;
+}
+.social-links .whatsapp:hover {
+    background: #128C7E;
+}
+
+/* YouTube Button */
+.social-links .youtube {
+    background: #FF0000;
+}
+.social-links .youtube:hover {
+    background: #CC0000;
+}
+
+/* Google Scholar Button */
+.social-links .google-scholar {
+    background: #4285F4;
+}
+.social-links .google-scholar:hover {
+    background: #356AC3;
+}
+
+/* ResearchGate Button */
+.social-links .researchgate {
+    background: #00CCBB;
+}
+.social-links .researchgate:hover {
+    background: #009E8E;
+}
+
+/* General Table Styles */
+.qualification-table {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto; /* Allows horizontal scrolling if table overflows */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 12px 15px;
+    font-size: 1em;
+}
+
+th {
+    background-color: #0077b5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+}
+
+/* Wide Screen View */
+@media (min-width: 769px) {
+    table {
+        font-size: 1em;
+    }
+}
+
+/* Narrow Screen View */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9em;
+    }
+
+    th {
+        display: none; /* Hide table headers */
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Membership Table Styles */
+.membership-table {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.membership-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.membership-table th, 
+.membership-table td {
+    border: 1px solid #ffffff;
+    padding: 12px 15px;
+    font-size: 1em;
+}
+
+.membership-table th {
+    background-color: #0077b5;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.membership-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.membership-table tr:nth-child(odd) {
+    background-color: #000000;
+}
+
+.membership-link {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: bold;
+}
+
+.membership-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .membership-table th {
+        display: none; /* Hide headers on small screens */
+    }
+
+    .membership-table tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ffffff;
+    }
+
+    .membership-table td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        position: relative;
+    }
+
+    .membership-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .membership-table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* General Table Styles */
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+.table-container th, 
+.table-container td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    font-size: 1em;
+}
+
+.table-container th {
+    background-color: #0077b5;
+    color: white;
+    text-transform: uppercase;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #000000;
+}
+
+.table-container tr:nth-child(odd) {
+    background-color: rgb(32, 32, 32);
+}
+
+.table-container td {
+    word-wrap: break-word;
+}
+
+/* Skills & Qualities List Styling */
+.skills-list {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.skills-list h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #0077b5;
+}
+
+.skills-list ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 30px;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.skills-list li::marker {
+    color: #0077b5;
+    font-size: 1.2em;
+}
+
+/* Publications Section */
+.publications {
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.publications h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077b5; /* Matrix green theme */
+}
+
+.publications ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.publications li {
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Ensures text wraps correctly */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .publications {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .publications h2 {
+        font-size: 1.5rem;
+    }
+
+    .publications ul {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+
+    .publications li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 480px) {
+    .publications {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .publications h2 {
+        font-size: 1.2rem;
+    }
+
+    .publications ul {
+        font-size: 0.8rem;
+    }
+
+    .publications li {
+        margin-bottom: 5px;
+    }
+}
+
+/* CONTENT */
+
+.content h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Experience Section */
+.experience {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #0077b5;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: white; /* Highlight job title */
+}
+
+.job p {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.job ul li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .experience {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .experience h2 {
+        font-size: 1.8rem;
+    }
+
+    .job h3 {
+        font-size: 1.3rem;
+    }
+
+    .job p {
+        font-size: 0.9rem;
+    }
+
+    .job ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        padding: 10px;
+    }
+
+    .experience h2 {
+        font-size: 1.5rem;
+    }
+
+    .job h3 {
+        font-size: 1.1rem;
+    }
+
+    .job p {
+        font-size: 0.8rem;
+    }
+
+    .job ul {
+        font-size: 0.8rem;
+    }
+}
+
+/* Completed Projects Section */
+.completed-projects {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #1a1a1a; /* Dark background */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-x: auto; /* Enable horizontal scroll */
+}
+
+.completed-projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00bfff; /* Blue heading */
+    margin-bottom: 20px;
+}
+
+.completed-projects h3 {
+    font-size: 1.5rem;
+    color: #00bfff; /* Blue subheading */
+    margin: 20px 0 10px;
+}
+
+/* Table Styles */
+.completed-projects table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Ensure table scrolls horizontally */
+
+}
+
+.completed-projects table thead {
+    background-color: #00bfff; /* Blue header background */
+    color: #fff;
+}
+
+.completed-projects table thead th {
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #444;
+}
+
+.completed-projects table tbody tr {
+    border-bottom: 1px solid #444;
+}
+
+.completed-projects table tbody tr:nth-child(even) {
+    background-color: #2b2b2b; /* Alternate row color */
+}
+
+.completed-projects table tbody tr:hover {
+    background-color: #3d3d3d;
+}
+
+.completed-projects table tbody td {
+    text-align: left;
+    padding: 12px;
+    font-size: 0.9rem;
+    border: 1px solid #444;
+    overflow: hidden; /* Prevent cell overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+/* Make Table Scrollable on Small Screens */
+.completed-projects .table-container {
+    text-align: left;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #444;
+}
+
+/* Prevent Table from Breaking on Smaller Devices */
+@media (max-width: 768px) {
+    .completed-projects {
+        padding: 15px;
+    }
+
+    .completed-projects table thead th,
+    .completed-projects table tbody td {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .completed-projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .completed-projects h3 {
+        font-size: 1.2rem;
+    }
+
+    .completed-projects table thead th,
+    .completed-projects table tbody td {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+}

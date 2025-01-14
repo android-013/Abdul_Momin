@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Momin</title>
+    <link rel="icon" type="image/png" href="images/P1.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Navigation Bar Section -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="images/P1.jpeg" alt="Profile Picture" class="nav-profile-pic">
+            <span class="nav-name">ABDUL MOMIN</span>
+        </div>
+        <div class="navbar-right">
+            <a href="experience.html" class="nav-button">Experience</a>
+            <a href="qualification.html" class="nav-button">Qualification</a>
+            <a href="publication.html" class="nav-button">Publication</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            const navbarRight = document.querySelector('.navbar-right');
+            navbarRight.classList.toggle('active');
+        }
+    </script>
+
+
+
+    <!-- Cover Photo with Welcome Message -->
+    <section class="cover cover-welcome">
+        <h1>Welcome to My Personal Website</h1>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <img src="images/P1.jpeg" alt="Profile Picture" class="profile-pic">
+        <h2>ABDUL MOMIN</h2>
+        <p>Hello! I'm engineer, Structural designer, researcher, and tech enthusiast from Bangladesh. Passionate about science, Engineering, Structural drawing and Innovation.</p>
+    </section>
+
+    <!-- Second Cover Photo -->
+    <section class="cover cover-secondary">
+        <h2>Connect with Me</h2>
+    </section>
+
+  <!-- Social Links Section -->
+    <section class="social-links">
+        <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" class="linkedin">LinkedIn</a>
+        <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" class="facebook">Facebook</a>
+        <a href="https://wa.me/96598971349" target="_blank" class="whatsapp">WhatsApp</a>
+        <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" class="youtube">YouTube</a>
+        <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" class="google-scholar">Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" class="researchgate">ResearchGate</a>
+    </section>
+
+    <section class ="developer">
+        <p></p>
+    </section>
+
+</body>
+</html>

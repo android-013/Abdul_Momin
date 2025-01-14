@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication</title>
+    <link rel="icon" type="image/png" href="images/P1.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="images/P1.jpeg" alt="Profile Picture" class="nav-profile-pic">
+            <span class="nav-name">ABDUL MOMIN/Publications</span>
+        </div>
+        <div class="navbar-right">
+            <a href="index.html" class="nav-button">HOME</a>
+            <a href="experience.html" class="nav-button">Experience</a>
+            <a href="qualification.html" class="nav-button">Qualification</a>   
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const navbarRight = document.querySelector('.navbar-right');
+            navbarRight.classList.toggle('active');
+        }
+    </script>
+    
+            <section class="content">
+                <h1>Publication</h1>
+                <p>This is my Publication page. This contains all the reserch i've done and published.</p>
+            </section>
+
+        <!-- Publications Section -->
+        <section class="publications">
+            <ul>
+                <li>
+                    Momin, M. A., Ahmed, K. S., Mustafy, T., & Islam, M. J. (2024). 
+                    <strong>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2590123024012416" target="_blank">
+                            Damage assessment and test results of construction materials of a fire-damaged RC building
+                        </a>
+                    </strong>. <i>Results in Engineering</i>, 24, 102986.
+                </li>
+                <li>
+                    Momin, M. A., Ahmed, K. S., & Rahaman, M. M. (2024).
+                    <strong>
+                        <a href="https://link.springer.com/article/10.1007/s40098-024-01129-8" target="_blank">
+                            Prediction of Safe Bearing Capacity for Bored Concrete Piles by Numerical Simulations
+                        </a>
+                    </strong>. <i>IGJ</i>, 1-18.
+                </li>
+                <li>
+                    Some other research articles are under review.
+                </li>
+                <li>
+                    Click on the name to verify authenticity.
+                </li>
+            </ul>
+        </section>
+        
+
+    <section class="social-links">
+        <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" class="linkedin">LinkedIn</a>
+        <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" class="facebook">Facebook</a>
+        <a href="https://wa.me/96598971349" target="_blank" class="whatsapp">WhatsApp</a>
+        <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" class="youtube">YouTube</a>
+        <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" class="google-scholar">Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" class="researchgate">ResearchGate</a>
+    </section>
+
+</body>
+</html>
