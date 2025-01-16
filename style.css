@@ -214,6 +214,7 @@ body {
 .qualification-table {
     width: 90%;
     margin: 20px auto;
+    text-align: left;
     overflow-x: auto; /* Allows horizontal scrolling if table overflows */
 }
 
@@ -373,7 +374,7 @@ tr:nth-child(odd) {
 .table-container table {
     width: 100%;
     border-collapse: collapse;
-    text-align: right;
+    text-align: left;
 }
 
 .table-container th, 
