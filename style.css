@@ -717,7 +717,12 @@ tr:nth-child(odd) {
 }
 
 /* Styling for the link */
-.developer-credit .credit-link {
+.developer-credit{
+    font-size: small;
+    font-family: monospace;
+}
+
+.credit-link {
     color: #0078D7; /* Blue color for the link */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make the link bold */
