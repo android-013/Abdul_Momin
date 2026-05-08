@@ -6,79 +6,87 @@
     <title>Publication</title>
     <link rel="icon" type="image/png" href="images/P1.jpeg">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-left">
             <img src="images/P1.jpeg" alt="Profile Picture" class="nav-profile-pic">
-            <span class="nav-name">ABDUL MOMIN/Publications</span>
+            <span class="nav-name">ABDUL MOMIN / Publications</span>
         </div>
         <div class="navbar-right">
-            <a href="index.html" class="nav-button">HOME</a>
+            <a href="index.html" class="nav-button">Home</a>
             <a href="experience.html" class="nav-button">Experience</a>
-            <a href="qualification.html" class="nav-button">Qualification</a>   
+            <a href="qualification.html" class="nav-button">Qualification</a>
+            <a href="publication.html" class="nav-button active">Publication</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <button class="hamburger" type="button" aria-label="Toggle navigation">☰</button>
     </nav>
 
-    <script>
-        function toggleMenu() {
-            const navbarRight = document.querySelector('.navbar-right');
-            navbarRight.classList.toggle('active');
-        }
-    </script>
-    
-            <section class="content">
-                <h1>Publication</h1>
-                <p>This is my Publication page. This contains all the reserch i've done and published.</p>
-            </section>
-
-        <!-- Publications Section -->
-        <section class="publications">
-            <ul>
-                <li>
-                    Momin, M. A., Ahmed, K. S., Mustafy, T., & Islam, M. J. (2024). 
-                    <strong>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S2590123024012416" target="_blank">
-                            Damage assessment and test results of construction materials of a fire-damaged RC building
-                        </a>
-                    </strong>. <i>Results in Engineering</i>, 24, 102986.
-                </li>
-                <li>
-                    Momin, M. A., Ahmed, K. S., & Rahaman, M. M. (2024).
-                    <strong>
-                        <a href="https://link.springer.com/article/10.1007/s40098-024-01129-8" target="_blank">
-                            Prediction of Safe Bearing Capacity for Bored Concrete Piles by Numerical Simulations
-                        </a>
-                    </strong>. <i>IGJ</i>, 1-18.
-                </li>
-                <li>
-                    Some other research articles are under review.
-                </li>
-                <li>
-                    Click on the name to verify authenticity.
-                </li>
-            </ul>
+    <main>
+        <section class="hero hero-secondary">
+            <div class="hero-card">
+                <p class="eyebrow">Publication</p>
+                <h1>Research & <span>Published Work</span></h1>
+                <p>This is my Publication page. This contains all the research I've done and published.</p>
+            </div>
         </section>
-        
 
-    <section class="social-links">
-        <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" class="linkedin">LinkedIn</a>
-        <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" class="facebook">Facebook</a>
-        <a href="https://wa.me/96598971349" target="_blank" class="whatsapp">WhatsApp</a>
-        <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" class="youtube">YouTube</a>
-        <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" class="google-scholar">Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" class="researchgate">ResearchGate</a>
+        <section class="section page-shell">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Research Articles</p>
+                <h2>Selected publications and research status</h2>
+                <p>Click on the publication title to verify authenticity.</p>
+            </div>
+
+            <div class="publication-grid">
+                <article class="publication-card">
+                    <p class="meta">Momin, M. A., Ahmed, K. S., Mustafy, T., & Islam, M. J. (2024)</p>
+                    <h2>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2590123024012416" target="_blank" rel="noopener noreferrer">Damage assessment and test results of construction materials of a fire-damaged RC building</a>
+                    </h2>
+                    <p><i>Results in Engineering</i>, 24, 102986.</p>
+                </article>
+
+                <article class="publication-card">
+                    <p class="meta">Momin, M. A., Ahmed, K. S., & Rahaman, M. M. (2024)</p>
+                    <h2>
+                        <a href="https://link.springer.com/article/10.1007/s40098-024-01129-8" target="_blank" rel="noopener noreferrer">Prediction of Safe Bearing Capacity for Bored Concrete Piles by Numerical Simulations</a>
+                    </h2>
+                    <p><i>IGJ</i>, 1-18.</p>
+                </article>
+
+                <article class="publication-card">
+                    <p class="meta">Under Review</p>
+                    <h2>Some other research articles are under review.</h2>
+                    <p>Further research items will be added after publication or acceptance.</p>
+                </article>
+
+                <article class="publication-card">
+                    <p class="meta">Authenticity Note</p>
+                    <h2>Click on the name to verify authenticity.</h2>
+                    <p>The linked publication titles open the official source pages in a new tab.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section class="social-section">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" rel="noopener noreferrer" class="linkedin">LinkedIn</a>
+            <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="facebook">Facebook</a>
+            <a href="https://wa.me/96598971349" target="_blank" rel="noopener noreferrer" class="whatsapp">WhatsApp</a>
+            <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" rel="noopener noreferrer" class="youtube">YouTube</a>
+            <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" rel="noopener noreferrer" class="google-scholar">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" rel="noopener noreferrer" class="researchgate">ResearchGate</a>
+        </div>
     </section>
 
     <section class="developer-credit">
         <p>
-          Developed by 
-          <a href="https://android-013.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="credit-link">
-            Aziz Rifat
-          </a>
+            Developed by
+            <a href="https://android-013.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="credit-link">Aziz Rifat</a>
         </p>
-    </section> 
-
+    </section>
 </body>
 </html>
