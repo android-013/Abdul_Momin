@@ -6,6 +6,7 @@
     <title>Qualification</title>
     <link rel="icon" type="image/png" href="images/P1.jpeg">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -14,191 +15,204 @@
             <span class="nav-name">ABDUL MOMIN / Qualifications</span>
         </div>
         <div class="navbar-right">
-            <a href="index.html" class="nav-button">HOME</a>
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="experience.html" class="nav-button">Experience</a>
+            <a href="qualification.html" class="nav-button active">Qualification</a>
             <a href="publication.html" class="nav-button">Publication</a>
-            <a href="experience.html" class="nav-button">Experience</a>   
         </div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <button class="hamburger" type="button" aria-label="Toggle navigation">☰</button>
     </nav>
-    <script>
-        function toggleMenu() {
-            const navbarRight = document.querySelector('.navbar-right');
-            navbarRight.classList.toggle('active');
-        }
-    </script>
 
-    <div class="content">
-        <h1>Qualification</h1>
-        <p>This is My Qualification page. This page contains detail descriptions of my academic degrees as well as other skills, courses and trainings I've achieved in pursuit of knowledge.</p>
-    </div>
-    <h1>Formal Education</h1>
-    <div class="qualification-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Institute</th>
-                    <th>Degree</th>
-                    <th>Passing Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td data-label="Institute">Khulna University of Engineering and Technology</td>
-                    <td data-label="Degree">B.Sc. in Civil Engineering</td>
-                    <td data-label="Passing Year">2014</td>
-                </tr>
-                <tr>
-                    <td data-label="Institute">Military Institute of Science and Technology</td>
-                    <td data-label="Degree">M.Sc. in Civil Engineering</td>
-                    <td data-label="Passing Year">2023</td> 
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h1>Membership in Professional Societies</h1>
-    <div class="membership-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Institution</th>
-                    <th>Membership ID</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td  data-label="Insitution: ">Institution of Engineers Bangladesh</td>
-                    <td  data-label="ID: ">
-                        <a href="https://www.iebbd.org/member/search.jsp?searchToken=0753FE086136708DB1AE6B65C2DB9408&membershipId=M38349&memberNameEmailMobile=" 
-                           target="_blank" 
-                           class="membership-link">
-                           MIEB
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Click on ID number to verify membership authenticity </p>
-
-    <h1>Computer Skills</h1>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No.</th>
-                        <th>Skill</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="No.">1</td>
-                        <td data-label="Skills.">Autodesk AutoCAD 2D</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No.">2</td>
-                        <td data-label="Skills.">Autodesk Revit 2D</td>
-                        <td data-label="Details.">2007</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No.">3</td>
-                        <td data-label="Skills.">Bentley Software</td>
-                        <td data-label="Details.">Staad.Pro, Ram Connection, Plaxis 3D V21</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No.">4</td>
-                        <td data-label="Skills.">CSI Software</td>
-                        <td data-label="Details.">ETABS v9.7, ETABS v15.2~v20, SAFE v12, SAFE v16, Sap2000 v15~v22</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No.">5</td>
-                        <td data-label="Skills.">Microsoft Software</td>
-                        <td data-label="Details.">MS Word, MS PowerPoint, MS Excel</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No.">6</td>
-                        <td data-label="Skills.">Other Software</td>
-                        <td data-label="Details.">Tekla Tedds, FIN EC, Geo5</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h1>Professional Courses and Trainings</h1>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No.</th>
-                        <th>Course & Training</th>
-                        <th>Organized By</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="No. ">1</td>
-                        <td data-label="Course/Training: ">Basic Geotechnical Engineering</td>
-                        <td data-label="Organization: ">3C Engineering & Research Center</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No. ">2</td>
-                        <td data-label="Course/Training: ">Basic Geotechnical Engineering</td>
-                        <td data-label="Organization: ">3C Engineering & Research Center</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No. ">3</td>
-                        <td data-label="Course/Training: ">Performance Based Seismic Design of Structures</td>
-                        <td data-label="Organization: ">Militery Instute of Science and Technology</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No. ">4</td>
-                        <td data-label="Course/Training: ">Workshop on Autocad </td>
-                        <td data-label="Organization: "> Khulna University of Engineering & Technology </td>
-                    </tr>
-                    <tr>
-                        <td data-label="No. ">5</td>
-                        <td data-label="Course/Training: "> Khulna University of Engineering & Technology  </td>
-                        <td data-label="Organization: "> ICC, RAJUK & IEB</td>
-                    </tr>
-                    <tr>
-                        <td data-label="No. ">6</td>
-                        <td data-label="Course/Training: ">Structural design by ETABS software</td>
-                        <td data-label="Organization: ">Engineering Research & Analysis Center </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    <h1>Key Skills & Qualities</h1>
-        <div class="skills-list">
-            <ul>
-                <li>Remarkable experience in designing geotechnical aspects for civil engineering projects</li>
-                <li>Knowledge of performing ground investigations</li>
-                <li>Ability to interpret various applications of geotechnical processes</li>
-                <li>Ability to calculate allowable bearing capacity of soil</li>
-                <li>Proficient with various CAD drawings</li>
-            </ul>
-        </div>
-    
-        <section class="social-links">
-            <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" class="linkedin">LinkedIn</a>
-            <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" class="facebook">Facebook</a>
-            <a href="https://wa.me/96598971349" target="_blank" class="whatsapp">WhatsApp</a>
-            <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" class="youtube">YouTube</a>
-            <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" class="google-scholar">Google Scholar</a>
-            <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" class="researchgate">ResearchGate</a>
+    <main>
+        <section class="hero hero-secondary">
+            <div class="hero-card">
+                <p class="eyebrow">Qualification</p>
+                <h1>Academic & Professional <span>Profile</span></h1>
+                <p>This is My Qualification page. This page contains detailed descriptions of my academic degrees as well as other skills, courses and trainings I've achieved in pursuit of knowledge.</p>
+            </div>
         </section>
 
-        <section class="developer-credit">
-            <p>
-              Developed by 
-              <a href="https://android-013.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="credit-link">
-                Aziz Rifat
-              </a>
-            </p>
-        </section> 
-        
-    </body>
+        <section class="section page-shell">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Education</p>
+                <h2>Formal Education</h2>
+            </div>
+            <div class="section-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Institute</th>
+                            <th>Degree</th>
+                            <th>Passing Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Institute">Khulna University of Engineering and Technology</td>
+                            <td data-label="Degree">B.Sc. in Civil Engineering</td>
+                            <td data-label="Passing Year">2014</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Institute">Military Institute of Science and Technology</td>
+                            <td data-label="Degree">M.Sc. in Civil Engineering</td>
+                            <td data-label="Passing Year">2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Membership</p>
+                <h2>Membership in Professional Societies</h2>
+            </div>
+            <div class="section-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Institution</th>
+                            <th>Membership ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Institution">Institution of Engineers Bangladesh</td>
+                            <td data-label="Membership ID">
+                                <a href="https://www.iebbd.org/member/search.jsp?searchToken=0753FE086136708DB1AE6B65C2DB9408&membershipId=M38349&memberNameEmailMobile=" target="_blank" rel="noopener noreferrer" class="membership-link">MIEB</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Click on ID number to verify membership authenticity.</p>
+            </div>
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Technical Skills</p>
+                <h2>Computer Skills</h2>
+            </div>
+            <div class="section-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Skill</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="No.">1</td>
+                            <td data-label="Skill">Autodesk AutoCAD 2D</td>
+                            <td data-label="Details">-</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">2</td>
+                            <td data-label="Skill">Autodesk Revit 2D</td>
+                            <td data-label="Details">2007</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">3</td>
+                            <td data-label="Skill">Bentley Software</td>
+                            <td data-label="Details">Staad.Pro, Ram Connection, Plaxis 3D V21</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">4</td>
+                            <td data-label="Skill">CSI Software</td>
+                            <td data-label="Details">ETABS v9.7, ETABS v15.2~v20, SAFE v12, SAFE v16, Sap2000 v15~v22</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">5</td>
+                            <td data-label="Skill">Microsoft Software</td>
+                            <td data-label="Details">MS Word, MS PowerPoint, MS Excel</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">6</td>
+                            <td data-label="Skill">Other Software</td>
+                            <td data-label="Details">Tekla Tedds, FIN EC, Geo5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Training</p>
+                <h2>Professional Courses and Trainings</h2>
+            </div>
+            <div class="section-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Course & Training</th>
+                            <th>Organized By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="No.">1</td>
+                            <td data-label="Course & Training">Basic Geotechnical Engineering</td>
+                            <td data-label="Organized By">3C Engineering & Research Center</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">2</td>
+                            <td data-label="Course & Training">Basic Geotechnical Engineering</td>
+                            <td data-label="Organized By">3C Engineering & Research Center</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">3</td>
+                            <td data-label="Course & Training">Performance Based Seismic Design of Structures</td>
+                            <td data-label="Organized By">Military Institute of Science and Technology</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">4</td>
+                            <td data-label="Course & Training">Workshop on AutoCAD</td>
+                            <td data-label="Organized By">Khulna University of Engineering & Technology</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">5</td>
+                            <td data-label="Course & Training">Khulna University of Engineering & Technology</td>
+                            <td data-label="Organized By">ICC, RAJUK & IEB</td>
+                        </tr>
+                        <tr>
+                            <td data-label="No.">6</td>
+                            <td data-label="Course & Training">Structural design by ETABS software</td>
+                            <td data-label="Organized By">Engineering Research & Analysis Center</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">Core Strengths</p>
+                <h2>Key Skills & Qualities</h2>
+            </div>
+            <div class="section-card skills-list">
+                <ul>
+                    <li>Remarkable experience in designing geotechnical aspects for civil engineering projects</li>
+                    <li>Knowledge of performing ground investigations</li>
+                    <li>Ability to interpret various applications of geotechnical processes</li>
+                    <li>Ability to calculate allowable bearing capacity of soil</li>
+                    <li>Proficient with various CAD drawings</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="social-section">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" rel="noopener noreferrer" class="linkedin">LinkedIn</a>
+            <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="facebook">Facebook</a>
+            <a href="https://wa.me/96598971349" target="_blank" rel="noopener noreferrer" class="whatsapp">WhatsApp</a>
+            <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" rel="noopener noreferrer" class="youtube">YouTube</a>
+            <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" rel="noopener noreferrer" class="google-scholar">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" rel="noopener noreferrer" class="researchgate">ResearchGate</a>
+        </div>
+    </section>
+
+    <section class="developer-credit">
+        <p>
+            Developed by
+            <a href="https://android-013.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="credit-link">Aziz Rifat</a>
+        </p>
+    </section>
+</body>
 </html>
-        
