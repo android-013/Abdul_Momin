@@ -6,67 +6,108 @@
     <title>Abdul Momin</title>
     <link rel="icon" type="image/png" href="images/P1.jpeg">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-        <!-- Navigation Bar Section -->
     <nav class="navbar">
         <div class="navbar-left">
             <img src="images/P1.jpeg" alt="Profile Picture" class="nav-profile-pic">
             <span class="nav-name">ABDUL MOMIN</span>
         </div>
         <div class="navbar-right">
+            <a href="index.html" class="nav-button active">Home</a>
             <a href="experience.html" class="nav-button">Experience</a>
             <a href="qualification.html" class="nav-button">Qualification</a>
             <a href="publication.html" class="nav-button">Publication</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <button class="hamburger" type="button" aria-label="Toggle navigation">☰</button>
     </nav>
 
-    <!-- JavaScript for Hamburger Menu -->
-    <script>
-        function toggleMenu() {
-            const navbarRight = document.querySelector('.navbar-right');
-            navbarRight.classList.toggle('active');
-        }
-    </script>
+    <main>
+        <section class="hero hero-home">
+            <div class="hero-grid">
+                <div class="hero-card">
+                    <p class="eyebrow">Personal Website</p>
+                    <h1>Welcome to My <span>Personal Website</span></h1>
+                    <p>Hello! I'm engineer Abdul Momin, Structural designer, researcher, and tech enthusiast from Bangladesh. Passionate about science, Engineering, Structural drawing and Innovation.</p>
+                    <div class="hero-actions">
+                        <a href="experience.html" class="btn">Explore Experience</a>
+                        <a href="publication.html" class="btn secondary">View Publications</a>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <strong>600+</strong>
+                            <span>Buildings designed across career projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong>2024</strong>
+                            <span>Recent published research works</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong>MIEB</strong>
+                            <span>Professional society membership</span>
+                        </div>
+                    </div>
+                </div>
 
+                <aside class="profile-card">
+                    <img src="images/P1.jpeg" alt="Abdul Momin profile picture">
+                    <div class="caption">
+                        <h2>ABDUL MOMIN</h2>
+                        <p>Structural designer, researcher, and engineering professional from Bangladesh.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
+        <section class="section page-shell">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Overview</p>
+                <h2>Engineering, research, and structural design in one portfolio.</h2>
+                <p>This website presents professional experience, academic qualifications, publications, completed projects, memberships, computer skills, and professional training information.</p>
+            </div>
 
-    <!-- Cover Photo with Welcome Message -->
-    <section class="cover cover-welcome">
-        <h1>Welcome to My Personal Website</h1>
-    </section>
+            <div class="quick-grid">
+                <a class="quick-card reveal" href="experience.html">
+                    <strong>Experience</strong>
+                    <span>Career works, employment history, building design, evaluation, and international collaboration projects.</span>
+                </a>
+                <a class="quick-card reveal" href="qualification.html">
+                    <strong>Qualification</strong>
+                    <span>Academic degrees, professional membership, computer skills, courses, trainings, and key qualities.</span>
+                </a>
+                <a class="quick-card reveal" href="publication.html">
+                    <strong>Publication</strong>
+                    <span>Published research articles and research authenticity links.</span>
+                </a>
+            </div>
+        </section>
 
-    <!-- Profile Section -->
-    <section class="profile">
-        <img src="images/P1.jpeg" alt="Profile Picture" class="profile-pic">
-        <h2>ABDUL MOMIN</h2>
-        <p>Hello! I'm engineer Abdul Momin, Structural designer, researcher, and tech enthusiast from Bangladesh. Passionate about science, Engineering, Structural drawing and Innovation.</p>
-    </section>
+        <section class="hero hero-secondary">
+            <div class="hero-card reveal">
+                <p class="eyebrow">Connect</p>
+                <h1><span>Connect with Me</span></h1>
+                <p>Find Abdul Momin on professional, academic, and social platforms.</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- Second Cover Photo -->
-    <section class="cover cover-secondary">
-        <h2>Connect with Me</h2>
-    </section>
-
-  <!-- Social Links Section -->
-    <section class="social-links">
-        <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" class="linkedin">LinkedIn</a>
-        <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" class="facebook">Facebook</a>
-        <a href="https://wa.me/96598971349" target="_blank" class="whatsapp">WhatsApp</a>
-        <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" class="youtube">YouTube</a>
-        <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" class="google-scholar">Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" class="researchgate">ResearchGate</a>
+    <section class="social-section">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/engr-momin-m-sc-547651ba" target="_blank" rel="noopener noreferrer" class="linkedin">LinkedIn</a>
+            <a href="https://www.facebook.com/abdul.momin.5623?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="facebook">Facebook</a>
+            <a href="https://wa.me/96598971349" target="_blank" rel="noopener noreferrer" class="whatsapp">WhatsApp</a>
+            <a href="https://youtube.com/@engr76momin?si=ECK9TcVDLhgxQejd" target="_blank" rel="noopener noreferrer" class="youtube">YouTube</a>
+            <a href="https://scholar.google.com/citations?user=KZNMa1wAAAAJ&hl=en#d=gs_hdr_drw&t=1734966553897" target="_blank" rel="noopener noreferrer" class="google-scholar">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Md-Momin-12" target="_blank" rel="noopener noreferrer" class="researchgate">ResearchGate</a>
+        </div>
     </section>
 
     <section class="developer-credit">
         <p>
-          Developed by 
-          <a href="https://android-013.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="credit-link">
-            Aziz Rifat
-          </a>
+            Developed by
+            <a href="https://android-013.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="credit-link">Aziz Rifat</a>
         </p>
-    </section>   
-
+    </section>
 </body>
 </html>
