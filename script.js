@@ -17,7 +17,7 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal, .section-card, .job, .project-card, .publication-card, .skill-pill, table, .profile-card, .hero-card, .social-links a').forEach((element) => {
+document.querySelectorAll('.reveal, .section-card, .job, .project-card, .publication-card, .skill-pill, table, .profile-card, .contact-card, .info-card, .hero-card, .social-links a').forEach((element) => {
     revealObserver.observe(element);
 });
 
