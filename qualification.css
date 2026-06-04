@@ -1,0 +1,115 @@
+.hero-secondary {
+    --hero-image: url('images/C2.jpg');
+    min-height: 48vh;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    position: relative;
+    margin-bottom: 12px;
+    padding: 14px 16px 14px 44px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    color: #edf0f2;
+    background: rgba(255, 255, 255, 0.048);
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.skills-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    color: var(--gold-soft);
+}
+
+.skills-list li:hover {
+    transform: translateX(5px);
+    border-color: rgba(215, 181, 107, 0.38);
+    background: rgba(181, 138, 59, 0.12);
+}
+
+.skill-pill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 12px;
+}
+
+.skill-pill {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    color: #edf0f2;
+    background: rgba(255, 255, 255, 0.065);
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-pill:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(215, 181, 107, 0.46);
+    background: rgba(181, 138, 59, 0.14);
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.info-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::after {
+    content: "";
+    position: absolute;
+    inset: auto -20% -45% auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(215, 181, 107, 0.16);
+    filter: blur(8px);
+    pointer-events: none;
+}
+
+.info-card h3 {
+    margin-top: 16px;
+    margin-bottom: 14px;
+    font-size: clamp(1.25rem, 2.6vw, 1.8rem);
+}
+
+.detail-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-list li {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 28px;
+    color: #edf0f2;
+    line-height: 1.7;
+}
+
+.detail-list li::before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    color: var(--gold-soft);
+    font-weight: 900;
+}
+
+@media (max-width: 700px) {
+    .hero-secondary {
+        min-height: 38vh;
+    }
+}

@@ -1,0 +1,35 @@
+.hero-secondary {
+    --hero-image: url('images/C2.jpg');
+    min-height: 48vh;
+}
+
+.publication-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.publication-card {
+    padding: clamp(1.1rem, 3vw, 1.8rem);
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.publication-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(215, 181, 107, 0.4);
+    background: linear-gradient(145deg, rgba(24, 43, 66, 0.9), rgba(16, 31, 49, 0.78));
+}
+
+.publication-card .meta {
+    color: #e0c47e;
+    font-weight: 800;
+}
+
+.publication-card p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .hero-secondary {
+        min-height: 38vh;
+    }
+}
